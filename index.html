@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=800, user-scalable=yes">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=800, user-scalable=yes"/>
     <title>Neueda Riga</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
     <style>
         body {
             background-color: #fafafa;
             color: #444;
-            font-family: "Open Sans", sans-serif;
+            font-size: 18.5px;
+        }
+        body, .leaflet-popup-content {
+            font-family: "Open Sans", "Helvetica Neue", sans-serif;
             font-weight: 300;
-            font-size: 14pt;
         }
         #info {
             width: 680px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -webkit-transform: translate(-50%, -50%);
+            margin: 50px auto;
         }
         #info h1 {
             margin-top: 0;
             font-size: 30px;
         }
-        #info img {
+        #info p {
+            margin: 5px 0;
+        }
+        #macbook img {
             float: right;
             margin-top: -60px;
             border-radius: 50%;
         }
-        #info p {
-            margin: 5px 0;
-        }
         #postpics {
             font-size: 0.8em;
+        }
+        #map {
+            clear: right;
+            margin-top: 60px;
+            height: 280px;
+            border-radius: 10px;
+        }
+        #map .leaflet-popup-content {
+            font-size: 15px;
         }
     </style>
 </head>
 <body>
     <div id="info">
         <h1>Neueda Riga</h1>
-        <p><img src="macbook-nano.jpg" width="306"/></p>
+        <p id="macbook"><img src="macbook-nano.jpg" width="306"/></p>
         <p>We're an intelligent software company.</p>
         <p>Our way of doing things:</p>
         <ul>
@@ -55,6 +63,18 @@
             please share your CV with our administrator, Zane:
             <a href="mailto:zane.kalversha@neueda.com">zane.kalversha@neueda.com</a>
         </p>
+        <div id="map"></div>
     </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+    <script>
+        var coords = [56.9086, 24.0829];
+        var map = L.map('map').setView(coords, 15)
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker(coords).addTo(map)
+            .bindPopup('Vienības gatve 109, Rīga, LV-1058 <br> 6th floor, office 6.6.')
+            .openPopup();
+    </script>
 </body>
 </html>
