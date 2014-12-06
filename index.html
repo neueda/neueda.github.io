@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=600, user-scalable=yes"/>
     <title>Neueda Riga</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300"/>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400"/>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
     <style>
         body {
@@ -13,8 +13,8 @@
             font-size: 18.5px;
         }
         body, .leaflet-popup-content {
-            font-family: "Open Sans", "Helvetica Neue", sans-serif;
-            font-weight: 300;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
         }
         #info {
             width: 480px;
@@ -27,7 +27,15 @@
         #info p {
             margin: 5px 0;
         }
-        #postpics {
+        #info .subtitle {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        #info .things {
+            margin-top: 0;
+            list-style: square;
+        }
+        #info .postpics {
             font-size: 0.8em;
         }
         #map {
@@ -43,16 +51,16 @@
 <body>
     <div id="info">
         <h1><img src="neueda.png" alt=""/></h1>
-        <p>We're an intelligent software company.</p>
+        <p class="subtitle">&ldquo;We apply intelligence, simply delivered.&rdquo;</p>
         <p>Our way of doing things:</p>
-        <ul>
+        <ul class="things">
             <li>clean code</li>
             <li>striving for 100% process automation</li>
             <li>genuine self-organization and initiative</li>
             <li>lightsabers</li>
         </ul>
-        <p id="postpics">
-            If you're like that too,
+        <p class="postpics">
+            If you're like that too,<br/>
             please share your CV with our administrator, Zane:
             <a href="mailto:zane.kalversha@neueda.com">zane.kalversha@neueda.com</a>
         </p>
