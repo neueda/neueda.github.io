@@ -25,6 +25,13 @@
             margin-top: 0;
             font-size: 30px;
         }
+        #info p a {
+            color: #007eae;
+            text-decoration: none;
+        }
+        #info p a:hover {
+            text-decoration: underline;
+        }
         #info p {
             margin: 5px 0;
         }
@@ -36,12 +43,16 @@
             margin-top: 0;
             list-style: square;
         }
-        #info .attention {
+        #info .smaller {
             font-size: 0.8em;
             line-height: 1.5em;
         }
+        #info .footer {
+            font-size: 0.7em;
+            color: #777;
+        }
         #map {
-            margin-top: 40px;
+            margin: 40px 0 10px;
             height: 280px;
             border-radius: 5px;
         }
@@ -61,7 +72,7 @@
             <li>genuine self-organization and initiative</li>
             <li>lightsabers</li>
         </ul>
-        <p class="attention">
+        <p class="smaller">
             We are actively looking for serious
             <strong>Java developers</strong>,
             <strong>web developers</strong>,
@@ -72,6 +83,9 @@
             <a href="mailto:zane.kalversha@neueda.com">zane.kalversha@neueda.com</a>
         </p>
         <div id="map"></div>
+        <p class="footer">
+            Neueda Riga is part of <a href="http://neueda.com">Neueda Consulting</a>.
+        </p>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
     <script>
