@@ -1,102 +1,283 @@
 <!DOCTYPE html>
+<!--[if IE 9]>
+<html lang="en" class="ie9">
+<![endif]-->
+<!--[if !IE]><!-->
 <html lang="en">
+<!--<![endif]-->
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=600, user-scalable=yes"/>
+    <meta charset="utf-8">
     <title>Neueda Riga</title>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400"/>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
-    <style>
-        body {
-            background-color: #fff;
-            color: #444;
-            font-size: 18.5px;
-            line-height: 1.5em;
-        }
-        body, .leaflet-popup-content {
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-        }
-        #info {
-            width: 480px;
-            margin: 50px auto;
-        }
-        #info h1 {
-            margin-top: 0;
-            font-size: 30px;
-        }
-        #info p a {
-            color: #007eae;
-            text-decoration: none;
-        }
-        #info p a:hover {
-            text-decoration: underline;
-        }
-        #info p {
-            margin: 5px 0;
-        }
-        #info .subtitle {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        #info .things {
-            margin-top: 0;
-            list-style: square;
-        }
-        #info .smaller {
-            font-size: 0.8em;
-            line-height: 1.5em;
-        }
-        #info .footer {
-            font-size: 0.7em;
-            color: #777;
-        }
-        #map {
-            margin: 40px 0 10px;
-            height: 280px;
-            border-radius: 5px;
-        }
-        #map .leaflet-popup-content {
-            font-size: 15px;
-        }
-    </style>
+    <meta name="description" content="Neueda Riga">
+    <meta name="author" content="dmitry@vrublevsky.me">
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <!-- TODO: add favicon -->
+    <!--<link rel="shortcut icon" href="images/neueda.png">-->
+
+    <!-- Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:700,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Plugins -->
+    <link href="css/animations.css" rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" rel="stylesheet"/>
+
+    <!-- the project core CSS file -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer)-->
+    <link href="css/skins/blue.css" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
-    <div id="info">
-        <h1><img src="neueda.png" alt=""/></h1>
-        <p class="subtitle">&ldquo;We apply intelligence, simply delivered.&rdquo;</p>
-        <p>Our way of doing things:</p>
-        <ul class="things">
-            <li>clean code</li>
-            <li>striving for 100% process automation</li>
-            <li>genuine self-organization and initiative</li>
-            <li>lightsabers</li>
-        </ul>
-        <p class="smaller">
-            We are actively looking for serious
-            <strong>Java developers</strong>,
-            <strong>web developers</strong>,
-            and <strong>test automation specialists</strong>
-            to join our cause!
-            If you are one of them,
-            please share your CV with Laura:
-            <a href="mailto:laura.mangulsone@neueda.com">laura.mangulsone@neueda.com</a>
-        </p>
-        <div id="map"></div>
-        <p class="footer">
-            Neueda Riga is part of <a href="http://neueda.com">Neueda Consulting</a>.
-        </p>
+<body class="no-trans front-page transparent-header ">
+    <div id="home"></div>
+
+    <div class="page-wrapper">
+        <div class="header-container">
+            <header class="header fixed clearfix">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <!-- header-left start -->
+                            <!-- ================ -->
+                            <div class="header-left clearfix">
+
+                                <!-- logo -->
+                                <div id="logo" class="logo">
+                                    <a href="index.html"><img id="logo_img" src="images/neueda.png" alt="The Project"></a>
+                                </div>
+                            </div>
+                            <!-- header-left end -->
+                        </div>
+                        <div class="col-md-9">
+                            <!-- header-right start -->
+                            <!-- ================ -->
+                            <div class="header-right clearfix">
+                                <!-- main-navigation start -->
+                                <!-- classes: -->
+                                <!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
+                                <!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
+                                <!-- "with-dropdown-buttons": Mandatory class that adds extra space, to the main navigation, for the search and cart dropdowns -->
+                                <!-- ================ -->
+                                <div class="main-navigation animated">
+
+                                    <!-- navbar start -->
+                                    <!-- ================ -->
+                                    <nav class="navbar navbar-default" role="navigation">
+                                        <div class="container-fluid">
+
+                                            <!-- Toggle get grouped for better mobile display -->
+                                            <div class="navbar-header">
+                                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-header">
+                                                    <span class="sr-only">Toggle navigation</span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                    <span class="icon-bar"></span>
+                                                </button>
+                                            </div>
+
+                                            <!-- Collect the nav links, forms, and other content for toggling -->
+                                            <div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-header">
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li><a href="#home">Home</a></li>
+                                                    <li><a href="#about">About</a></li>
+                                                    <li><a href="#hiring">Hiring</a></li>
+                                                    <li><a href="#contact">Contact</a></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+                                    <!-- navbar end -->
+                                </div>
+                                <!-- main-navigation end -->
+                            </div>
+                            <!-- header-right end -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- header end -->
+        </div>
+        <!-- Header end -->
+
+        <div class="section default-bg text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>“We apply intelligence, simply delivered.”</h2>
+                        <div class="separator"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="main-container">
+            <div class="container">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="text-center title">About <strong>Us</strong></h2>
+                    <div class="separator"></div>
+                    <p class="large text-center">Bunch of geeks with passion to build great software</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="title">Our way of doing things:</h3>
+                        <ul>
+                            <li>clean code</li>
+                            <li>striving for 100% process automation</li>
+                            <li>genuine self-organization and initiative</li>
+                            <li>lightsabers</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="overlay-container overlay-visible">
+                            <img src="images/Darth-Vader.jpg" alt="">
+                            <div class="overlay-bottom hidden-xs">
+                                <div class="text">
+                                    BB-ZSHOOOO
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h3 class="title">Our <strong>Team</strong></h3>
+                <div class="separator-2"></div>
+                <div class="row grid-space-10">
+                    <div class="col-sm-4">
+                        <div class="team-member image-box style-2 shadow bordered light-gray-bg text-center">
+                            <div class="overlay-container overlay-visible">
+                                <img src="images/team/dmitry_buzdin.jpg" alt="">
+                                <div class="overlay-bottom">
+                                    <ul class="social-links circle dark margin-clear">
+                                        <li class="github">
+                                            <a target="_blank" href="https://github.com/buzdin"><i class="fa fa-github"></i></a>
+                                        </li>
+                                        <li class="linkedin">
+                                            <a target="_blank" href="https://lv.linkedin.com/pub/dmitry-buzdin/2/b04/90"><i class="fa fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="body">
+                                <h3 class="margin-clear">Dmity Buzdin</h3>
+                                <small>Chief Architect</small>
+                                <div class="separator mt-10"></div>
+                                <p class="small margin-clear">Eating Java on breakfast</p>
+                                <a href="mailto:dmitry.buzdin@neueda.com" class="btn btn-lg-link link-dark"><i class="pr-10 fa fa-envelope-o"></i>Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <div class="section dark-bg text-center" id="hiring">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Let's Work Together</h2>
+                        <div class="separator-3"></div>
+                        <p>
+                            We are actively looking for serious
+                            <strong>Java developers</strong>,
+                            <strong>web developers</strong>,
+                            and <strong>test automation specialists</strong>
+                            to join our cause!
+                            <br>
+                            If you are one of them,
+                            please share your CV with Laura:
+                            <a href="mailto:laura.mangulsone@neueda.com">laura.mangulsone@neueda.com</a>
+                        </p>
+                        <div class="separator-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact"></div>
+        <footer id="footer" class="clearfix">
+
+            <!-- .footer start -->
+            <!-- ================ -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-content">
+                                    <ul class="list-inline mb-20">
+                                        <li>
+                                            <i class="text-default fa fa-map-marker pr-5"></i> Latvia, Riga, Vienibas gatve 109
+                                        </li>
+                                        <li>
+                                            <a href="mailto:laura.mangulsone@neueda.com" class="link-dark"><i class="text-default fa fa-envelope-o pl-10 pr-5"></i> laura.mangulsone@neueda.com</a>
+                                        </li>
+                                    </ul>
+                                    <div class="separator-2"></div>
+                                    <p>Neueda Riga is part of <a href="http://neueda.com">Neueda Consulting</a></p>
+                                    <ul class="social-links circle margin-clear">
+                                        <li class="github">
+                                            <a target="_blank" href="https://github.com/neueda"><i class="fa fa-github"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-content">
+                                    <div id="map"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .footer end -->
+
+            <!-- .subfooter start -->
+            <!-- ================ -->
+            <div class="subfooter">
+                <div class="container">
+                    <div class="subfooter-inner">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-center">Copyright © 2015 Neueda Riga. All Rights Reserved</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .subfooter end -->
+        </footer>
     </div>
+
+    <!-- Jquery and Bootstap core js files -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Modernizr javascript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    <!-- Libraries -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
-    <script>
-        var coords = [56.9086, 24.0829];
-        var map = L.map('map').setView(coords, 15)
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        L.marker(coords).addTo(map)
-            .bindPopup('Vienības gatve 109, Rīga, LV-1058 <br> 6th floor, office 6.11.')
-            .openPopup();
-    </script>
+
+    <!-- Custom javascript -->
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>
