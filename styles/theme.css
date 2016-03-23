@@ -83,10 +83,6 @@ section {
     text-align: center;
 }
 
-section h2 {
-    font-size: 48px;
-}
-
 section.alt-gray {
     background-color: #f2f2f2;
 }
@@ -101,11 +97,64 @@ section img.icon {
     height: 120px;
 }
 
-section .section-point {
+.section-header {
+    margin-bottom: 80px;
+}
+
+.section-header .title {
+    margin: 20px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.section-header .subtitle {
+    margin: 20px;
+}
+
+.section-point {
     text-align: center;
 }
 
-section .section-highlight {
+.section-highlight {
     margin: auto 20px;
     font-size: 21px;
+}
+
+section .tech-logos .logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    position: relative;
+}
+
+section .tech-logos img {
+    max-width: 80px;
+    max-height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .tech-logos .logo:after {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 2px 10px;
+    line-height: 26px;
+    height: 30px;
+    border-radius: 30px;
+    white-space: pre;
+    opacity: 0;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+}
+
+section .tech-logos .logo:hover:after {
+    opacity: 1;
 }
