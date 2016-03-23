@@ -158,3 +158,13 @@ section .tech-logos .logo:after {
 section .tech-logos .logo:hover:after {
     opacity: 1;
 }
+
+section .user-groups {
+    height: 100px;
+    line-height: 100px;
+}
+
+section .user-groups img {
+    vertical-align: bottom;
+    width: 60px;
+}
