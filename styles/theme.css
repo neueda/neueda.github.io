@@ -10,14 +10,62 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
+.m-top {
+    margin-top: 20px;
+}
+
+.m-top-lg {
+    margin-top: 40px;
+}
+
+.btn {
+    height: 36px;
+    border-radius: 36px;
+    border-width: 2px;
+    font-size: 14px;
+    line-height: 20px;
+    background: none;
+    color: inherit;
+}
+
+.btn-lg {
+    height: 48px;
+    border-radius: 48px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 .main-header {
     background-color: #00a9e0;
 }
 
+.main-header-img {
+    height: 354px;
+}
+
+@media (min-width: 992px) {
+    .main-header-img {
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header-img {
+        margin-right: 150px;
+    }
+}
+
 .main-header-content {
-    padding: 60px 0;
+    padding: 60px 20px;
     color: #fff;
     font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .main-header-content {
+        padding: 40px 0;
+        text-align: center;
+    }
 }
 
 .main-header-content h1 {
@@ -32,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
     padding: 100px 0;
     font-weight: lighter;
+    text-align: center;
 }
 
 section h2 {
@@ -54,4 +103,9 @@ section img.icon {
 
 section .section-point {
     text-align: center;
+}
+
+section .section-highlight {
+    margin: auto 20px;
+    font-size: 21px;
 }
