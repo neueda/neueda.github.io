@@ -26,6 +26,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 20px;
     background: none;
     color: inherit;
+    transition: background 0.3s, border 0.3s, color 0.3s;
+    -webkit-transition: background 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-default:hover {
+    border-color: #00a9e0;
+    background-color: #00a9e0;
+    color: #fff;
 }
 
 .btn-lg {
@@ -33,6 +41,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 48px;
     font-size: 18px;
     line-height: 24px;
+}
+
+.heart {
+    color: #fe4365;
+    font-size: 1.1em;
+    vertical-align: middle;
 }
 
 .main-header {
@@ -93,6 +107,10 @@ section.alt-black {
     color: #fff;
 }
 
+section.no-padding {
+    padding: 0;
+}
+
 section img.icon {
     height: 120px;
 }
@@ -124,7 +142,6 @@ section .tech-logos .logo {
     width: 80px;
     height: 80px;
     margin: 20px auto;
-    position: relative;
 }
 
 section .tech-logos img {
@@ -136,8 +153,13 @@ section .tech-logos img {
     transform: translate(-50%, -50%);
 }
 
-section .tech-logos .logo:after {
+.with-tooltip {
+    position: relative;
+}
+
+.with-tooltip:after {
     content: attr(data-title);
+    z-index: 1000;
     display: block;
     position: absolute;
     top: 50%;
@@ -155,16 +177,41 @@ section .tech-logos .logo:after {
     -webkit-transition: opacity 0.3s;
 }
 
-section .tech-logos .logo:hover:after {
+.with-tooltip:hover:after {
     opacity: 1;
 }
 
 section .user-groups {
-    height: 100px;
-    line-height: 100px;
+    height: 120px;
+    line-height: 120px;
 }
 
 section .user-groups img {
-    vertical-align: bottom;
-    width: 60px;
+    vertical-align: middle;
+    width: 70px;
+}
+
+#map {
+    height: 300px;
+}
+
+.main-footer {
+    padding: 30px 0;
+    background-color: #1d2026;
+    font-weight: normal;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+.main-footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+}
+
+.main-footer a:hover {
+    color: #00a9e0;
+    text-decoration: none;
 }
