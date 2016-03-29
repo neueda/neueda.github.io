@@ -5,6 +5,12 @@ body {
     color: #3a3c4a;
 }
 
+@media (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', sans-serif;
     font-weight: normal;
@@ -22,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 36px;
     border-radius: 36px;
     border-width: 2px;
-    font-size: 14px;
+    font-size: 0.8em;
     line-height: 20px;
     background: none;
     color: inherit;
@@ -39,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-lg {
     height: 48px;
     border-radius: 48px;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 24px;
 }
 
@@ -72,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-header-content {
     padding: 60px 20px;
     color: #fff;
-    font-size: 24px;
+    font-size: 1.3em;
 }
 
 @media (max-width: 767px) {
@@ -84,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-header-content h1 {
     font-weight: bold;
-    font-size: 56px;
+    font-size: 3em;
 }
 
 .main-header-content img.logo {
@@ -121,7 +127,7 @@ section img.icon {
 
 .section-header .title {
     margin: 20px;
-    font-size: 48px;
+    font-size: 2.5em;
     font-weight: bold;
 }
 
@@ -133,9 +139,20 @@ section img.icon {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .section-point,
+    .section-point.col-xs-6:first-child {
+        margin-top: 30px;
+    }
+
+    .section-point:first-child {
+        margin-top: inherit;
+    }
+}
+
 .section-highlight {
     margin: auto 20px;
-    font-size: 21px;
+    font-size: 1.2em;
 }
 
 section .tech-logos .logo {
@@ -153,6 +170,18 @@ section .tech-logos img {
     transform: translate(-50%, -50%);
 }
 
+@media (max-width: 767px) {
+    section .tech-logos .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    section .tech-logos img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
+
 .with-tooltip {
     position: relative;
 }
@@ -165,7 +194,7 @@ section .tech-logos img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 2px 10px;
     line-height: 26px;
@@ -179,6 +208,12 @@ section .tech-logos img {
 
 .with-tooltip:hover:after {
     opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .with-tooltip:after {
+        display: none;
+    }
 }
 
 section .user-groups {
@@ -199,7 +234,7 @@ section .user-groups img {
     padding: 30px 0;
     background-color: #1d2026;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 0.8em;
     color: #fff;
     text-align: center;
 }
