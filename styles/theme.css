@@ -59,32 +59,31 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #00a9e0;
 }
 
-.main-header-img {
-    height: 354px;
-}
-
-@media (min-width: 992px) {
-    .main-header-img {
-        margin-right: 100px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .main-header-img {
-        margin-right: 150px;
-    }
-}
-
 .main-header-content {
     padding: 60px 20px;
     color: #fff;
     font-size: 1.25em;
+    background: url('../images/doublehelix.svg') no-repeat right;
+    background-size: auto 354px;
 }
 
 @media (max-width: 767px) {
     .main-header-content {
         padding: 40px 0;
         text-align: center;
+        background: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-header-content {
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header-content {
+        margin-right: 150px;
     }
 }
 
