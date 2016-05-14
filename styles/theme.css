@@ -55,6 +55,58 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 
+.main-menu {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    background-color: #0083ad;
+    color: #fff;
+}
+
+.main-menu .navbar-nav > li > a {
+    color: #fff;
+}
+
+.main-menu .navbar-nav > .active > a,
+.main-menu .navbar-nav > .active > a:focus,
+.main-menu .navbar-nav > .active > a:hover {
+    background-color: #fff;
+    color: #004960;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #004960;
+}
+
+.navbar-default .navbar-toggle {
+    border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #0083ad;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border: none;
+}
+
+.navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .main-header {
     background-color: #00a9e0;
 }
@@ -235,7 +287,6 @@ section .user-groups img {
     font-weight: normal;
     font-size: 0.8em;
     color: #fff;
-    text-align: center;
 }
 
 .main-footer a {
@@ -248,4 +299,14 @@ section .user-groups img {
 .main-footer a:hover {
     color: #00a9e0;
     text-decoration: none;
+}
+
+.main-footer .footer-row {
+    margin: 20px auto;
+}
+
+@media (max-width: 767px) {
+    .main-footer .footer-row {
+        margin: 20px;
+    }
 }
