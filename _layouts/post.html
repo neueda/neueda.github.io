@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="neueda-container">
+        <h1>{{ page.title }}</h1>
+        <span class="post-date">{{ page.date | date_to_string }} | {{ page.categories | join:", " }}</span>
+
+        {{ content }}
+    </div>
+
+</div>

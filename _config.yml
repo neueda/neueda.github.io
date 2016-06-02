@@ -1,0 +1,44 @@
+host: 0.0.0.0
+
+exclude:      ["Gemfile", "Gemfile.lock"]
+markdown_ext: "md"
+
+# Filtering Content
+show_drafts: false
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  #- jekyll-redirect-from
+
+# Conversion
+markdown:    kramdown                   # Default on github-pages
+highlighter: rouge                      # Default on github-pages
+lsi:         false                      # Produce an index for related posts.
+excerpt_separator: "<!--content-->"     # Separate main content from intro
+incremental: false
+
+# Outputting
+permalink:     "/blog/:categories/:title"
+paginate_path: "/blog/page:num/"
+paginate:      10
+timezone:      Europe/Riga
+
+#################
+# Info
+#################
+# For jekyll-seo-tag
+title: Neueda R&D
+# For jekyll-feed
+name: Neueda R&D
+description: >
+  Neueda R&D
+  is a software company in Riga
+  where anyone can be a hero.
+url: http://neueda.lv

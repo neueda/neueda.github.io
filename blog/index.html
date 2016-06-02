@@ -1,0 +1,54 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="container">
+    <nav class="neueda-container">
+        {% for post in paginator.posts %}
+        <div class="post">
+            <h1>
+                <a href="{{ post.url }}">
+                    {{ post.title }}
+                </a>
+            </h1>
+            <span class="post-date">{{ post.date | date_to_string }} | {{ post.categories | join:", " }}</span>
+
+            {{ post.excerpt }}
+            <a href="{{ post.url }}">Read more</a>
+        </div>
+        {% endfor %}
+
+
+        <nav>
+            <ul class="pager">
+
+            {% if paginator.next_page %}
+                <li>
+                    <a href="{{ site.github.url }}/blog/page{{paginator.next_page}}">Older</a>
+                </li>
+            {% else %}
+                <li class="disabled">
+                    <span>Older</span>
+                </li>
+            {% endif %}
+            {% if paginator.previous_page %}
+                {% if paginator.page == 2 %}
+                    <li>
+                        <a href="{{ site.github.url }}/blog">Newer</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{{ site.github.url }}/blog/page{{paginator.previous_page}}">Newer</a>
+                    </li>
+                {% endif %}
+            {% else %}
+                <li class="disabled">
+                    <span>Newer</span>
+                </li>
+            {% endif %}
+            </ul>
+        </nav>
+    </div>
+</div>
+
