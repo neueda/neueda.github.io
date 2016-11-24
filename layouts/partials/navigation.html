@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default main-menu">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <img class="logo"
+                     src="/public/images/neueda.svg"
+                     alt="Neueda">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                {{ $currentNode := . }}
+                {{ range .Site.Menus.main }}
+                    <li class={{if $currentNode.IsMenuCurrent "main" . }}active{{end}}>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                    </li>
+                {{ end}}
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="https://twitter.com/NeuedaDev">
+                        <i class="fa fa-twitter"></i>
+                        <span class="visible-xs-inline">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/neueda">
+                        <i class="fa fa-github"></i>
+                        <span class="visible-xs-inline">GitHub</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

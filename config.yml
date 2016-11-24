@@ -1,0 +1,16 @@
+baseurl: "https://neueda.lv"
+title: "Neueda R&D"
+languageCode: "en-us"
+metaDataFormat: "yaml"
+canonifyurls: true
+publishdir: "build"
+
+permalinks:
+  post: /:year/:month/:day/:title/
+
+menu:
+  main:
+    - name: "Join Us"
+      identifier: "join-us"
+      weight: 0
+      url: "/"

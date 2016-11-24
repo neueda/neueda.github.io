@@ -1,0 +1,42 @@
+{{ define "main" }}
+<div class="page">
+    <div class="projects">
+        <header class="header">
+            <div class="container">
+                <h1>
+                    <img class="open-source-icon" src="/public/images/open-source.svg" alt="Open Source">
+                    Open source
+                </h1>
+                <p class="subtitle">Our open contributions to test automation, Neo4j, and elsewhere.</p>
+            </div>
+        </header>
+
+        <section class="open-source">
+            <div class="container neueda-container">
+                <div class="row">
+                    {{ range $.Site.Data.projects.open_source }}
+                    <div class="col-sm-12 col-md-4">
+                        <div class="project">
+                            <h3>
+                                <a href="https://github.com/{{ .github }}">
+                                    {{ .title }}
+                                </a>
+                            </h3>
+                            <p>
+                                <a class="github-button"
+                                   href="https://github.com/{{ .github }}"
+                                   data-icon="octicon-star"
+                                   data-style="mega"
+                                   data-count-href="/{{ .github }}/stargazers"
+                                   data-count-api="/repos/{{ .github }}#stargazers_count">Star</a>
+                            </p>
+                            <p>{{ .description }}</p>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{{ end }}

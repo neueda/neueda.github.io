@@ -1,0 +1,33 @@
+.main-footer {
+  padding: 30px 0;
+  background-color: #1d2026;
+  font-weight: normal;
+  font-size: 0.8em;
+  color: #fff;
+
+  h3 {
+    @extend .font-sans-serif;
+    margin-top: 0;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+
+    &:hover {
+      color: #00a9e0;
+      text-decoration: none;
+    }
+  }
+
+  .footer-row {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-footer .footer-row {
+    margin: 20px;
+  }
+}
