@@ -1,0 +1,25 @@
+$color-primary: #00a9e0;
+$color-primary-darker: #0083ad;
+$color-secondary: #fff;
+$color-text: #3a3c4a;
+$color-text-lighter: #747474;
+
+.font-sans-serif {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Roboto Slab', serif;
+}
+
+@import "base.scss";
+@import "navigation.scss";
+@import "footer.scss";
+@import "tooltips.scss";
+
+@import "page/splash.scss";
+@import "page/join_us.scss";
+@import "page/page.scss";
+@import "page/projects.scss";
+@import "page/post.scss";
+@import "page/product.scss";

@@ -1,0 +1,97 @@
+$image-border-radius: 5px;
+$post-line-height: 1.6em;
+$post-block-margin: 25px;
+
+.post-list {
+  .post {
+    padding: 20px;
+    margin: 0 0;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+
+    &-image {
+      border-radius: $image-border-radius;
+      max-height: 100px;
+      overflow: hidden;
+      img {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  div:last-child {
+    border-bottom: 0;
+  }
+}
+
+.post {
+  padding: 0 20px;
+  margin: 40px auto 80px;
+
+  &-image {
+    margin: 30px 0;
+  }
+  img {
+    border-radius: $image-border-radius;
+  }
+
+  h1 {
+    font-weight: bold;
+    a {
+      color: $color-text;
+      text-decoration: none;
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+
+  .more {
+    margin-top: 20px;
+  }
+
+  .tagline {
+    display: block;
+    color: $color-text-lighter;
+    font-size: 15px;
+  }
+
+  .author {
+    font-size: 15px;
+    margin: 20px 0;
+    .name {
+      padding-top: 2px;
+    }
+    .photo {
+      border-radius: 50%;
+      height: 45px;
+      float: left;
+      margin-right: 15px;
+    }
+  }
+
+  p {
+    line-height: $post-line-height;
+    margin: $post-block-margin 0;
+  }
+  blockquote p:first-child {
+    margin-top: 0;
+  }
+
+  ul {
+    margin: $post-block-margin 0;
+    li {
+      margin: $post-block-margin/3 0;
+      line-height: $post-line-height;
+    }
+  }
+
+  &-highlight {
+    @extend .font-serif;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    font-weight: lighter;
+    color: $color-text-lighter;
+    padding: 10px 0 10px 30px;
+  }
+}

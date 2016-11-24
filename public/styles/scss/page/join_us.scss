@@ -1,0 +1,147 @@
+.join-us {
+  section {
+    padding: 100px 0;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  section.alt-gray {
+    background-color: #f2f2f2;
+  }
+
+  section.alt-black {
+    background-color: #1d2026;
+    font-weight: normal;
+    color: #fff;
+  }
+
+  section.no-padding {
+    padding: 0;
+  }
+
+  section img.icon {
+    height: 120px;
+  }
+
+  .section-header {
+    margin-bottom: 80px;
+  }
+
+  .section-header .title {
+    margin: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .section-header .subtitle {
+    margin: 20px;
+  }
+
+  .section-point {
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    .section-point,
+    .section-point.col-xs-6:first-child {
+      margin-top: 30px;
+    }
+
+    .section-point:first-child {
+      margin-top: inherit;
+    }
+  }
+
+  .section-highlight {
+    margin: auto 20px;
+    font-size: 1.2em;
+  }
+
+  .heart {
+    color: #fe4365;
+    font-size: 1.1em;
+    vertical-align: middle;
+  }
+
+  .main-header {
+    background-color: #00a9e0;
+  }
+
+  .main-header-content {
+    padding: 90px 20px;
+    color: #fff;
+    font-size: 1.25em;
+    background: url('../images/doublehelix.svg') no-repeat right;
+    background-size: auto 345px;
+  }
+
+  @media (max-width: 767px) {
+    .main-header-content {
+      padding: 40px 0;
+      text-align: center;
+      background: none;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .main-header-content {
+      margin-right: 100px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .main-header-content {
+      margin-right: 150px;
+    }
+  }
+
+  .main-header-content h1 {
+    font-weight: bold;
+    font-size: 2.5em;
+  }
+
+  .main-header-content img.logo {
+    margin-bottom: 30px;
+  }
+
+  section .tech-logos .logo {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+  }
+
+  section .tech-logos img {
+    max-width: 80px;
+    max-height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 767px) {
+    section .tech-logos .logo {
+      width: 60px;
+      height: 60px;
+    }
+
+    section .tech-logos img {
+      max-width: 60px;
+      max-height: 60px;
+    }
+  }
+
+  section .user-groups {
+    height: 120px;
+    line-height: 120px;
+  }
+
+  section .user-groups img {
+    vertical-align: middle;
+    width: 70px;
+  }
+
+  #neueda-map {
+    height: 300px;
+  }
+}

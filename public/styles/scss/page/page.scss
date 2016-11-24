@@ -1,0 +1,30 @@
+.page {
+  .base-header {
+    padding: 60px 20px;
+    font-weight: lighter;
+    text-align: center;
+
+    h1 {
+      font-weight: bold;
+      font-size: 2.5em;
+    }
+  }
+
+  .main-header {
+    @extend .base-header;
+    background-color: #00a9e0;
+    color: #fff;
+  }
+
+  .header {
+    @extend .base-header;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+
+  section {
+    padding: 100px 0 0;
+  }
+}

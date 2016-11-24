@@ -1,0 +1,59 @@
+$color-menu-active: #004960;
+
+.main-menu {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  background-color: $color-primary-darker;
+  color: $color-secondary;
+}
+
+.main-menu .navbar-nav > li > a {
+  color: $color-secondary;
+}
+
+.main-menu .navbar-nav > .active > a,
+.main-menu .navbar-nav > .active > a:focus,
+.main-menu .navbar-nav > .active > a:hover {
+  background-color: $color-secondary;
+  color: $color-menu-active;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: $color-menu-active;
+  color: $color-secondary;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: $color-secondary;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $color-secondary;
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: $color-primary-darker;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border: none;
+}
+
+.navbar-nav {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand img {
+  height: 30px;
+  margin: -6px 0 6px;
+}

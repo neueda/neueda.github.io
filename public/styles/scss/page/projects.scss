@@ -1,0 +1,30 @@
+.projects {
+  .section-title {
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 60px;
+  }
+
+  .project {
+    margin-bottom: 40px;
+    padding: 0 10px;
+    font-weight: lighter;
+    text-align: center;
+
+    h3 {
+      margin: 0 0 20px;
+    }
+  }
+
+  .open-source {
+    background-color: #f2f2f2;
+    padding: 70px 0;
+  }
+
+  .open-source-icon {
+    height: 50px;
+    vertical-align: top;
+    margin-right: 5px;
+  }
+}
