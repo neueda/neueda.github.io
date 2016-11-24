@@ -2,12 +2,17 @@
 
 echo "Deploying updates to GitHub..."
 
-# Build the project.
-echo "Building project..."
-hugo
+echo "Removing old build..."
+rm -rf build
+mkdir build
 
-# Add changes to git.
-echo "Adding changed to git..."
+echo "Initializing git..."
+git clone -b master --single-branch git@github.com:neueda/neueda.github.io.git build
+
+echo "Building project..."
+hugo && cd build
+
+echo "Adding changes..."
 git add -A
 
 # Commit changes.
@@ -16,7 +21,10 @@ if [ $# -eq 1 ]
   then msg="$1"
 fi
 echo "Creating commit: $msg"
-git commit -m "$msg"
+git commit -am "$msg"
 
 # Push source and build repos.
-git subtree push --prefix=build git@github.com:neueda/neueda.github.io.git master
+echo "Deploy..."
+git push -f origin master
+
+echo "Done!"
