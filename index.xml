@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neueda R&amp;D</title>
-    <link>http://labs.neueda.com/index.xml</link>
-    <description>Recent content on Neueda R&amp;D</description>
+    <title>Neueda Labs</title>
+    <link>http://labs.neueda.com/</link>
+    <description>Recent content on Neueda Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Nov 2016 16:30:52 +0200</lastBuildDate>
-    <atom:link href="http://labs.neueda.com/index.xml" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Projects</title>
-      <link>http://labs.neueda.com/projects/</link>
-      <pubDate>Thu, 24 Nov 2016 16:30:52 +0200</pubDate>
-      
-      <guid>http://labs.neueda.com/projects/</guid>
-      <description>&lt;p&gt;placeholder&lt;/p&gt;
-</description>
-    </item>
+	<atom:link href="http://labs.neueda.com/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>
