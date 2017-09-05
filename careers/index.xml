@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Neueda Labs</title>
-    <link>http://labs.neueda.com/</link>
-    <description>Recent content on Neueda Labs</description>
+    <title>Careers on Neueda Labs</title>
+    <link>http://labs.neueda.com/careers/</link>
+    <description>Recent content in Careers on Neueda Labs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Sep 2017 13:00:47 +0000</lastBuildDate>
     
-	<atom:link href="http://labs.neueda.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://labs.neueda.com/careers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
