@@ -7,10 +7,3 @@ publishdir: "build"
 
 permalinks:
   post: /:year/:month/:day/:title/
-
-menu:
-  main:
-    - name: "Join Us"
-      identifier: "join-us"
-      weight: 0
-      url: "/"

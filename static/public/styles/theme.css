@@ -201,6 +201,10 @@ a:hover {
 .join-us .section-header .subtitle {
   margin: 20px; }
 
+.join-us .section-button {
+  display: inline-block;
+  margin: auto 10px; }
+
 .join-us .section-point {
   text-align: center; }
 
