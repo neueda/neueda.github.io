@@ -1,8 +1,10 @@
 ---
 date: "2017-09-05T13:00:47.152Z"
-title: Senior Full-Stack Software Engineer
+title: Senior Software Engineer
 type: page
 layout: article
+aliases:
+  - /careers/senior-full-stack-software-engineer/
 ---
 
 Neueda is a trusted partner to international market leaders in government, utilities and financial markets where it provides digital transformation solutions to elevate their business operations, customer experience, and bottom line.
