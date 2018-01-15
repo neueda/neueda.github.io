@@ -7,20 +7,23 @@ layout: article
 
 Neueda is a trusted partner to international market leaders in government, utilities and financial markets where it provides digital transformation solutions to elevate their business operations, customer experience, and bottom line.
 
-Neueda Labs has a team of software engineers working in R&D capacity in Riga, Latvia. The team is working on mission-critical software projects for some of the world’s largest technology companies. These projects are being rolled out globally. Due to the increasing amount of work Neueda is continuously recruiting new team members in Riga.
+Neueda Labs is a team of software engineers working in R&D capacity in Riga, Latvia. The team is working on mission-critical software projects for some of the world’s largest technology companies. These projects are being rolled out globally.
 
-## Responsibilities
+We are always looking for talented people to join our team.
+
+## Your Responsibilities
 
 - Be a part of a self-organizing team
 - Develop web applications, APIs, and proofs of concepts
-- Constantly improve usability
+- Think about and improve usability
 - Facilitate automated testing
 
 ## Requirements
 
 - 2+ years of experience in the industry
+- Eagerness to learn
 - Ability to communicate ideas in English is a must
-- Knowledge of at least one of: Java, JavaScript, Go
+- Knowledge of Java or JavaScript
 - Experience in web application development
 - Experience with Linux is a plus
 
