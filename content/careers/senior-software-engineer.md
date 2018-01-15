@@ -24,7 +24,7 @@ We are always looking for talented people to join our team.
 ## Requirements
 
 - Ability to communicate ideas in English is a must
-- Eagerness to learn and adopt
+- Eagerness to learn and adapt
 - Strong knowledge of at least one of: Java, JavaScript, Go
 - Experience in web application development 
 - Good command of Linux tools
