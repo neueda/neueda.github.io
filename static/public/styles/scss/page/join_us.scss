@@ -15,6 +15,41 @@
     color: #fff;
   }
 
+  section.big-image {
+    padding: 0;
+    background-size: cover;
+    height: 500px;
+  }
+
+  img.image {
+    width: 100%;
+    height: 40%;
+  }
+
+  .image-title {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .community {
+    background: url('../images/community.png') no-repeat center/100%;
+  }
+
+  .quality {
+    background: url('https://source.unsplash.com/nw2H5tAhR4I') center/100%;
+  }
+
+  .price {
+    background: url('../images/price.png') no-repeat center/100%;
+  }
+
+  .white-overlay {
+    background-color: rgb(0, 7, 64);
+    border-radius: 0px;
+  }
+
   section.no-padding {
     padding: 0;
   }
@@ -23,12 +58,17 @@
     height: 120px;
   }
 
+  section img.icon-cup {
+    height: 50px;
+  }
+
   .section-header {
     margin-bottom: 80px;
   }
 
   .section-header .title {
-    margin: 20px;
+    margin: 0;
+    padding: 25px;
     font-size: 2.5em;
     font-weight: bold;
   }
@@ -69,15 +109,15 @@
   }
 
   .main-header {
-    background-color: #00a9e0;
+    background-color: #212d3d;
   }
 
   .main-header-content {
     padding: 90px 20px;
     color: #fff;
     font-size: 1.25em;
-    background: url('../images/doublehelix.svg') no-repeat right;
-    background-size: auto 345px;
+    background: url('../images/neueda-logo.svg') no-repeat right;
+    background-size: 150px;
   }
 
   @media (max-width: 767px) {

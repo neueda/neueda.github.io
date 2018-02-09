@@ -69,7 +69,7 @@ a:hover {
   margin-bottom: 0;
   border: none;
   border-radius: 0;
-  background-color: #0083ad;
+  background-color: #35465d;
   color: #fff; }
 
 .main-menu .navbar-nav > li > a {
@@ -184,17 +184,49 @@ a:hover {
   font-weight: normal;
   color: #fff; }
 
+.join-us section.big-image {
+  padding: 0;
+  background-size: cover;
+  height: 500px; }
+
+.join-us img.image {
+  width: 100%;
+  height: 40%; }
+
+.join-us .image-title {
+  margin: 0;
+  padding-top: 50px;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+.join-us .community {
+  background: url("../images/community.png") no-repeat center/100%; }
+
+.join-us .quality {
+  background: url("https://source.unsplash.com/nw2H5tAhR4I") center/100%; }
+
+.join-us .price {
+  background: url("../images/price.png") no-repeat center/100%; }
+
+.join-us .white-overlay {
+  background-color: #000740;
+  border-radius: 0px; }
+
 .join-us section.no-padding {
   padding: 0; }
 
 .join-us section img.icon {
   height: 120px; }
 
+.join-us section img.icon-cup {
+  height: 50px; }
+
 .join-us .section-header {
   margin-bottom: 80px; }
 
 .join-us .section-header .title {
-  margin: 20px;
+  margin: 0;
+  padding: 25px;
   font-size: 2.5em;
   font-weight: bold; }
 
@@ -225,14 +257,14 @@ a:hover {
   vertical-align: middle; }
 
 .join-us .main-header {
-  background-color: #00a9e0; }
+  background-color: #212d3d; }
 
 .join-us .main-header-content {
   padding: 90px 20px;
   color: #fff;
   font-size: 1.25em;
-  background: url("../images/doublehelix.svg") no-repeat right;
-  background-size: auto 345px; }
+  background: url("../images/neueda-logo.svg") no-repeat right;
+  background-size: 150px; }
 
 @media (max-width: 767px) {
   .join-us .main-header-content {
