@@ -46,6 +46,5 @@ Please send us a few lines along with your CV or LinkedIn profile.
 <tr><th>Salary</th><td>from 800 up to 1500 EUR (net)</td></tr>
 <tr><th>Contact person</th><td>Roberts Luksa</td></tr>
 <tr><th>Contact email</th><td><a href="mailto:roberts.luksa@neueda.com">roberts.luksa@neueda.com</a></td></tr>
-<tr><th>Contact phone</th><td><a href="tel:+37126326457">+37126326457</a></a></td></tr>
 <tr><th>Type of job</th><td>full-time</td></tr>
 </table>
